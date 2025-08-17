@@ -9,7 +9,7 @@ private:
 public:
     ToppingGroup();
     ~ToppingGroup();
-    void add(PizzaComponent component);
+    void add(const PizzaComponent& component);
     std::string getName() override;
     double getPrice() override;
 };

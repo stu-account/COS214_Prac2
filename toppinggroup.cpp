@@ -6,8 +6,7 @@ ToppingGroup::ToppingGroup() {
 ToppingGroup::~ToppingGroup() {
 }
 
-//shouldn't it be PizzaComponent* ? spec says otherwise
-void ToppingGroup::add(PizzaComponent component) {
+void ToppingGroup::add(const PizzaComponent& component) {
     
 }
 

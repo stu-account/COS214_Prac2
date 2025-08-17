@@ -12,8 +12,8 @@ private:
 public:
     PizzaComponent(double price, std::string name);
     virtual ~PizzaComponent();
-    virtual std::string getName() = 0;
-    virtual double getPrice() = 0;
+    virtual std::string getName();
+    virtual double getPrice();
 };
 
 #endif
