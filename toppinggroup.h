@@ -2,10 +2,12 @@
 #define TOPPINGGRPOUP_H
 
 #include "pizzacomponent.h"
+#include <vector>
 
 class ToppingGroup : public PizzaComponent{
 private:
-    PizzaComponent* toppings;
+    // PizzaComponent* toppings;
+    std::vector<PizzaComponent*> toppings;
 public:
     ToppingGroup();
     ~ToppingGroup();

@@ -7,10 +7,10 @@ class Topping : public PizzaComponent{
 private:
     
 public:
-    Topping();
+    Topping(double price, std::string name);
     ~Topping();
-    std::string getName() override;
-    double getPrice() override;
+    // std::string getName() override;
+    // double getPrice() override;
 };
 
 #endif
