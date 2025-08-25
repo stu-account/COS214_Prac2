@@ -5,15 +5,15 @@
 
 class PizzaComponent
 {
-private:
-    double price;
-    std::string name;
+    protected:
+        double price;
+        std::string name;
 
-public:
-    PizzaComponent(double price, std::string name);
-    virtual ~PizzaComponent();
-    virtual std::string getName();
-    virtual double getPrice();
+    public:
+        PizzaComponent(double price, std::string name);
+        virtual ~PizzaComponent();
+        virtual std::string getName() const = 0;
+        virtual double getPrice() const = 0;
 };
 
 #endif

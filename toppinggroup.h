@@ -11,9 +11,9 @@ private:
 public:
     ToppingGroup();
     ~ToppingGroup();
-    void add(const PizzaComponent& component);
-    std::string getName() override;
-    double getPrice() override;
+    void add(PizzaComponent* component);
+    std::string getName() const override;
+    double getPrice() const override;
 };
 
 #endif

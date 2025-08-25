@@ -10,14 +10,10 @@ Topping::~Topping() {
 
 }
 
-// std::string Topping::getName() {
-//     /* manje what happens when we're returning a private attribute from the parent class? */
-//     return PizzaComponent::getName();
-// }
+std::string Topping::getName() const {
+    return this->name;
+}
 
-// double Topping::getPrice() {
-//     return PizzaComponent::getPrice();
-// }
-//wait, these aren't compulsory overrides
-
-
+double Topping::getPrice() const {
+    return this->price;
+}
