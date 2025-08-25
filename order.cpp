@@ -14,7 +14,7 @@ void Order::setDiscountStrategy(DiscountStrategy* strategy){
 
 double Order::calculateSubtotal(){
     double subtotal = 0;
-    // will this work or will we need vector iterators?
+    // will this work or will we need vector iterators? no idea
     for (Pizza* pizza : pizzas) {
         subtotal+= pizza->getPrice();
     }
