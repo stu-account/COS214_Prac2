@@ -3,8 +3,8 @@
 
 class DiscountStrategy
 {
-public:
-    virtual double applyDiscount();
+    public:
+        virtual double applyDiscount(double subtotal) = 0;
 };
 
 #endif
