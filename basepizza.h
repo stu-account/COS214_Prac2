@@ -6,10 +6,12 @@
 
 class BasePizza : public Pizza{
 private:
-    PizzaComponent toppings;
+    PizzaComponent* toppings;
 public:
-    BasePizza(PizzaComponent& toppings);
+    BasePizza(PizzaComponent* toppings);
     ~BasePizza();
+    std::string getName() override;
+    double getPrice() override;
 };
 
 

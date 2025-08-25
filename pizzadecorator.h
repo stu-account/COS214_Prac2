@@ -5,10 +5,12 @@
 
 class PizzaDecorator : Pizza {
 private:
-    Pizza pizza;
+    Pizza* pizza;
 public:
-    PizzaDecorator(const Pizza& pizza);
+    PizzaDecorator(Pizza* pizza);
     ~PizzaDecorator();
+    double getPrice() override;
+    std::string getName() override;
 };
 
 
